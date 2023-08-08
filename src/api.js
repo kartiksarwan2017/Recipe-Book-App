@@ -1,9 +1,10 @@
-// src/api.js
-const API_KEY = '1796b0ab3c2443a6943f4b89a0a6f708';
+import { API_KEY } from "./config";
+
+const SPOONACULAR_API_KEY = API_KEY;
 
 export const fetchRecipes = async () => {
   try {
-    const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}`);
+    const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${SPOONACULAR_API_KEY}`);
     const data = await response.json();
     return data.results;
   } catch (error) {
@@ -13,7 +14,7 @@ export const fetchRecipes = async () => {
 
 export const fetchRecipeDetails = async (recipeId) => {
   try {
-    const response = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${API_KEY}`);
+    const response = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${SPOONACULAR_API_KEY}`);
     const data = await response.json();
     return data;
   } catch (error) {
