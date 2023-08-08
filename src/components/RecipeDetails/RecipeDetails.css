@@ -1,0 +1,34 @@
+.recipe-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .recipe-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .ingredients-container {
+    margin-bottom: 30px;
+  }
+  
+  .ingredients-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .instructions-container {
+    line-height: 1.6;
+  }
+  
+  .instructions-text {
+    white-space: pre-line;
+  }
+  
